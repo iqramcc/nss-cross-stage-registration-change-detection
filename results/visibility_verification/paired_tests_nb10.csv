@@ -1,0 +1,9 @@
+building,cross_stage,split,vis_only,ours_only,p
+Bldg3,False,dev,1,0,1.0
+Bldg3,False,eval,6,0,0.03125
+Bldg3,True,dev,1,1,1.0
+Bldg3,True,eval,1,1,1.0
+Bldg5,False,dev,2,0,0.5
+Bldg5,False,eval,1,0,1.0
+Bldg5,True,dev,1,0,1.0
+Bldg5,True,eval,4,0,0.125

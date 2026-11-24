@@ -1,0 +1,23 @@
+cross_stage,method,n,coarse,fine,med_disp_cm,med_time_s
+False,A: ransac6 > icp,120,0.608,0.613,0.666,5.432
+False,OURS: bev+r4 > gnc,120,0.842,0.84,0.042,2.156
+False,bev+r4 (ours),120,0.867,0.832,0.334,1.263
+False,bev-xc (ours),120,0.15,0.143,462.634,0.435
+False,fgr,120,0.217,0.05,261.903,3.985
+False,ours-init > icp,120,0.833,0.824,0.505,1.841
+False,ours-init > trimmed,120,0.867,0.857,0.656,1.845
+False,ours-init > tukey,120,0.867,0.866,0.063,1.838
+False,ransac4 (ours),120,0.75,0.639,5.628,1.106
+False,ransac6,120,0.608,0.462,10.968,4.566
+False,ransac6 > gnc,120,0.617,0.613,0.059,5.81
+True,A: ransac6 > icp,120,0.15,0.152,452.535,4.808
+True,OURS: bev+r4 > gnc,120,0.458,0.455,90.977,2.67
+True,bev+r4 (ours),120,0.442,0.393,90.683,1.35
+True,bev-xc (ours),120,0.258,0.134,258.75,0.496
+True,fgr,120,0.0,0.0,303.031,3.457
+True,ours-init > icp,120,0.45,0.455,80.852,2.209
+True,ours-init > trimmed,120,0.483,0.446,80.499,2.2
+True,ours-init > tukey,120,0.475,0.446,90.802,2.211
+True,ransac4 (ours),120,0.383,0.143,180.735,1.375
+True,ransac6,120,0.05,0.009,471.355,3.879
+True,ransac6 > gnc,120,0.125,0.116,451.511,5.409

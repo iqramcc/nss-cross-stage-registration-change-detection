@@ -1,0 +1,17 @@
+building,cross_stage,a,b,a_only,b_only,p
+Bldg3,False,GeoTransformer,standard: ransac6 > icp,27,4,3.39532271027565e-05
+Bldg3,False,GeoTransformer,ours: bev+r4 > gnc,22,8,0.016124801710247997
+Bldg3,False,GeoTransformer + ours,ours: bev+r4 > gnc,15,4,0.0192108154296875
+Bldg3,False,GeoTransformer + ours,GeoTransformer,4,7,0.548828125
+Bldg3,True,GeoTransformer,standard: ransac6 > icp,19,8,0.052238985896110535
+Bldg3,True,GeoTransformer,ours: bev+r4 > gnc,4,33,1.0843941709026694e-06
+Bldg3,True,GeoTransformer + ours,ours: bev+r4 > gnc,4,13,0.049041748046875
+Bldg3,True,GeoTransformer + ours,GeoTransformer,21,1,1.0967254638671875e-05
+Bldg5,False,GeoTransformer,standard: ransac6 > icp,27,3,8.430331945419312e-06
+Bldg5,False,GeoTransformer,ours: bev+r4 > gnc,11,5,0.210113525390625
+Bldg5,False,GeoTransformer + ours,ours: bev+r4 > gnc,4,3,1.0
+Bldg5,False,GeoTransformer + ours,GeoTransformer,4,9,0.266845703125
+Bldg5,True,GeoTransformer,standard: ransac6 > icp,21,8,0.0241195447742939
+Bldg5,True,GeoTransformer,ours: bev+r4 > gnc,6,19,0.01463329792022705
+Bldg5,True,GeoTransformer + ours,ours: bev+r4 > gnc,8,7,1.0
+Bldg5,True,GeoTransformer + ours,GeoTransformer,16,2,0.001312255859375
