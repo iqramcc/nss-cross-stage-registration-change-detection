@@ -7,16 +7,18 @@ We align terrestrial laser scans of buildings under construction, taken at diffe
 * **Registration:** a gravity prior (levelled scanners → 4-DoF RANSAC), an exhaustive bird's-eye-view cross-correlation over wall points (BEV-XC), symmetric wall-agreement verification, and GNC point-to-plane ICP. Compared with FPFH + RANSAC + ICP, PREDATOR and GeoTransformer (pretrained and fine-tuned), and hybrids that feed learned correspondences into our gravity-aware search.
 * **Change detection:** a point is *changed* only if the other scanner saw through it, *unobserved* if it was hidden, *unchanged* if a surface is within 15 cm. Compared with cloud-to-cloud, point-to-plane and voxel-occupancy differencing.
 
-## Main results (coarse success: < 0.5 m and < 5°, 120 pairs per cell, from a random heading)
+## Main results (registration recall under the NSS criterion: rotation < 10° and translation < 0.2 m, 120 pairs per cell, from a random heading)
 
 | Building | Same stage: standard → ours | Cross stage: standard → ours |
 |---|---|---|
-| Bldg1 | 60.8 → 84.2 % | 15.0 → 45.8 % |
-| Bldg2 | 64.2 → 85.0 % | 23.3 → 60.8 % |
-| Bldg3 | 52.5 → 62.5 % | 22.5 → 53.3 % |
-| Bldg4 | 51.7 → 70.0 % | 57.5 → 76.7 % |
-| Bldg5 | 60.8 → 79.2 % | 55.0 → 75.8 % |
-| Bldg6 | 62.5 → 83.3 % | 42.5 → 71.7 % |
+| Bldg1 | 60.8 → 84.2 % | 15.0 → 43.3 % |
+| Bldg2 | 63.3 → 83.3 % | 22.5 → 57.5 % |
+| Bldg3 | 50.8 → 62.5 % | 20.8 → 49.2 % |
+| Bldg4 | 51.7 → 69.2 % | 31.7 → 45.8 % |
+| Bldg5 | 60.8 → 78.3 % | 45.0 → 62.5 % |
+| Bldg6 | 62.5 → 82.5 % | 42.5 → 71.7 % |
+
+Fine success (< 10 cm and < 1°) is within 1 point of these numbers. Ours wins in every building (paired sign test, p < 0.003).
 
 GeoTransformer fine-tuned on Bldg1/2/6 is stronger still in 3 of 4 test settings; its correspondences inside our gravity-aware search give the best cross-stage results (Bldg3 55.0 %, Bldg5 89.2 %).
 
